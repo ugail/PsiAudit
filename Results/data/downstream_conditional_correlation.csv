@@ -1,0 +1,3 @@
+psi_g_formula_version,scope,outcome,n_pairs,spearman_Psi_vs_outcome,spearman_H_vs_outcome
+v12_gated,compatible_pairs,final_acc,9,0.25641129703418536,0.25641129703418536
+v12_gated,compatible_pairs,conv_rate,9,0.8921846206693677,0.8921846206693677

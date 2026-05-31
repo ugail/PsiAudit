@@ -1,0 +1,5 @@
+psi_g_formula_version,n,hilbert_dim,n_projectors,t_build_groups_s,t_audit_one_s,feasible
+v12_gated,4,16,13,0.0064,0.0828,True
+v12_gated,6,64,18,0.0127,0.5474,True
+v12_gated,8,256,23,0.3544,0.9601,True
+v12_gated,10,1024,28,2.955,3.933,True

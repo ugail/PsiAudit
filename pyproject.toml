@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psiaudit"
+version = "1.0.0"
+description = "A toolkit for auditing symmetry-organised complexity in equivariant quantum neural network ansaetze"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Hassan Ugail" },
+    { name = "Newton Howard" },
+]
+keywords = [
+    "quantum machine learning",
+    "equivariant quantum neural networks",
+    "symmetry",
+    "ansatz diagnostics",
+    "expressibility",
+    "barren plateaus",
+]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.9",
+    "pandas>=1.5",
+    "matplotlib>=3.6",
+]
+
+[project.urls]
+Repository = "https://github.com/ugail/PsiAudit"
+
+[tool.setuptools]
+packages = ["psiaudit"]

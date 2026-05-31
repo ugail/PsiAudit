@@ -1,0 +1,6 @@
+psi_g_formula_version,ansatz,SU2_task,Sn_task,U1_task
+v12_gated,HEA,1.0,1.0,0.8333333333333333
+v12_gated,SU2_equiv,0.75,0.0,0.0
+v12_gated,Sn_equiv,0.671875,1.0,1.0
+v12_gated,U1_broken,1.0,0.0,0.0
+v12_gated,U1_equiv,0.75,0.0,0.0

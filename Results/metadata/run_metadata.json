@@ -1,0 +1,52 @@
+{
+  "config": {
+    "n_audit": 6,
+    "L": 2,
+    "T": 40,
+    "n_scaling": [
+      4,
+      6,
+      8
+    ],
+    "S_diag": 200,
+    "S_grad": 80,
+    "weights": [
+      0.4,
+      0.35,
+      0.25
+    ],
+    "gamma": 3.0,
+    "seed": 7,
+    "fast_pass": false
+  },
+  "psi_g_formula": "Psi_G = S_G * (w_H * H_G + w_D * D_G + w_M * H_G * (1 - M_G))",
+  "psi_g_formula_version": "v12_gated",
+  "psi_g_formula_note": "v12 gated formulation: the stability term w_M * (1 - M_G) is gated by H_G so that it contributes only when sector structure is activated. Confined trajectories with H_G = 0 collapse to Psi_G = 0 regardless of M_G or S_G, restoring the Regime A collapse property. Earlier drafts used either w_M * M_G with wrong sign or a bare w_M * (1 - M_G) term that created a stability floor for trivial confinement.",
+  "unitary_compliance_formula": "Delta_U_bar = E_{theta, g} [ ||U(theta) R(g) - R(g) U(theta)||_F / (||U(theta)||_F * ||R(g)||_F) ];  S_U = exp(-gamma * Delta_U_bar)",
+  "delta_U_samples": 32,
+  "delta_U_n_rows": 5,
+  "delta_U_gamma": 3.0,
+  "delta_U_note": "Unitary-level commutator deviation computed for the five natural-group (ansatz, group) pairs at n = n_audit. The sample count S = 32 is fixed inside the audit cell and is independent of S_diag / S_grad. Increase S to reduce Monte Carlo noise; runtime scales linearly.",
+  "python": "3.12.13",
+  "numpy": "2.0.2",
+  "scipy": "1.16.3",
+  "pandas": "2.2.2",
+  "matplotlib": "3.10.0",
+  "n_audit_rows": 30,
+  "n_scaling_rows": 15,
+  "n_diag_rows": 5,
+  "ansaetze": [
+    "HEA",
+    "U1_equiv",
+    "SU2_equiv",
+    "Sn_equiv",
+    "U1_broken"
+  ],
+  "groups": [
+    "U(1)",
+    "SU(2)",
+    "S_n"
+  ],
+  "gradient_method": "central_finite_difference_eps_1e-4",
+  "figure_format": "png_300dpi"
+}

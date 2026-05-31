@@ -1,0 +1,78 @@
+{
+  "analysis_config": {
+    "run_multiseed": true,
+    "n_seeds": 20,
+    "seed_list": null,
+    "run_sensitivity": true,
+    "n_weight_samples": 200,
+    "gamma_grid": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      5.0,
+      8.0
+    ],
+    "delta_U_samples": 8,
+    "run_downstream": true,
+    "downstream_n": 6,
+    "downstream_train_steps": 60,
+    "downstream_datasets_per_ansatz": 1,
+    "downstream_train_seeds": 8,
+    "run_cost_scaling": true,
+    "cost_scaling_n": [
+      4,
+      6,
+      8,
+      10
+    ],
+    "multiseed_scaling_n": [
+      4,
+      6,
+      8
+    ]
+  },
+  "seed_list": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "psi_g_formula_version": "v12_gated",
+  "files_written": [
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/audit_multiseed_raw.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/audit_multiseed.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/scaling_multiseed_raw.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/scaling_multiseed.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/comparative_multiseed_raw.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/comparative_multiseed.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/delta_U_multiseed_raw.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/delta_U_multiseed.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/sensitivity_weights.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/sensitivity_gamma.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/sensitivity_gate_ablation_regimeB.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/sensitivity_gate_ablation_regimeA.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/downstream_results.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/downstream_with_components.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/downstream_correlations.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/downstream_accuracy_matrix.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/downstream_conditional_correlation.csv",
+    "/content/drive/MyDrive/Colab Notebooks/TEMP/Quantum Neural Networks/PlosOne - QNN Symmetry Audit/Results/data/cost_scaling.csv"
+  ]
+}
