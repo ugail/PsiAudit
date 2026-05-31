@@ -4,6 +4,9 @@
 
 Parameterised quantum circuits are usually evaluated with diagnostics for expressibility, gradient behaviour, and entanglement. These are useful, but they say nothing about whether a circuit respects the symmetry structure it was designed around, which matters most in equivariant quantum machine learning where symmetry is part of the model. **PsiAudit is an open-source toolkit that audits symmetry-organised behaviour in quantum neural network ansaetze before training.** For a given ansatz, target symmetry, and state trajectory it reports four normalised components, namely sector-occupation entropy, cross-sector coherence, sectoral fluctuation, and generator-sum compliance, and combines them into a configurable composite index that is read as a dashboard rather than as a measure of downstream accuracy. The toolkit supports unitary phase symmetry, spin symmetry, and permutation symmetry, with the permutation audit performed at the level of Hamming-weight orbits rather than full symmetric-group irreducible representations.
 
+<img width="2660" height="2267" alt="Figure1" src="https://github.com/user-attachments/assets/9752cb74-b006-4afb-89af-8c42185e0524" />
+
+
 ## What does this measure?
 
 The headline empirical findings, reproduced across twenty random seeds and system sizes from four to eight qubits, are:
